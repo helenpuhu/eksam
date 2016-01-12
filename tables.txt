@@ -1,0 +1,28 @@
+CREATE TABLE persons(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	color VARCHAR(15),
+	time DATETIME,
+	gender VARCHAR(15)
+	);
+	
+	INSERT INTO persons (id, color, time, gender) VALUES('1', 'valge', '', 'naine');
+	INSERT INTO persons (id, color, time, gender) VALUES('2', 'must', '', 'mees');
+	INSERT INTO persons (id, color, time, gender) VALUES('3', 'lilla', '', 'mees');
+	
+	ALTER TABLE persons
+ADD deleted VARCHAR(15);
+
+
+	INSERT INTO persons (id, color, time, gender) VALUES('5', 'valge', '2016-01-11 10:15:00', 'naine');
+	INSERT INTO persons (id, color, time, gender) VALUES('6', 'sinine', '2016-02-11 15:15:00', 'mees');
+	
+	
+	INSERT INTO persons (id, color, time, gender) VALUES('7', 'roheline', '2015-03-11 11:30:00', 'mees');
+	INSERT INTO persons (id, color, time, gender) VALUES('8', 'kollane', '2015-02-11 1:10:00', 'naine');
+	INSERT INTO persons (id, color, time, gender) VALUES('9', 'oranz', '2016-01-07 10:00:00', 'mees');
+	
+	
+	CREATE TABLE clothes_colors(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	color VARCHAR(15)
+	);
